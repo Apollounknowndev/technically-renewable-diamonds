@@ -1,0 +1,15 @@
+{
+	"schemaVersion": 1,
+	"id": "renewable-diamonds",
+	"version": "${version}",
+	"name": "\"Renewable\" Diamonds",
+	"description": "This mod technically adds renewable diamonds.",
+	"authors": [
+		"Apollo"
+	],
+	"license": "CC0-1.0",
+	"icon": "assets/renewable-diamonds/icon.png",
+	"mixins": [
+		"renewable-diamonds.mixins.json"
+	]
+}
