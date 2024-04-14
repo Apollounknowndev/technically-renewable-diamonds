@@ -23,8 +23,8 @@ public class AbstractBlockMixin {
 			Box box = Box.enclosing(pos.add(-1, -1, -1), pos.add(1, 1 ,1));
 			if (world.getStatesInBox(box)
 				.filter(blockState -> !state.isOf(Blocks.STONE))
-				.collect(Collectors.toList())
-				.isEmpty()
+				.toList()
+				.size() == 1
 			) {
 
 				world.setBlockState(pos, Blocks.COAL_ORE.getDefaultState());
